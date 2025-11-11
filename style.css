@@ -59,7 +59,21 @@ body::before {
   overflow: hidden;
   backdrop-filter: blur(8px);
 }
+.avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  margin-bottom: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(236, 72, 153, 0.7);
+}
 .gradient-border {
   border: 12px solid transparent;
   background-origin: border-box;
